@@ -1,0 +1,18 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+nuget FParsec
+nuget FSharp.Core
+nuget FSharp.Data.LiteralProviders
+
+group Tests
+
+storage: none
+source https://api.nuget.org/v3/index.json
+nuget coverlet.collector
+nuget FluentAssertions
+nuget FSharp.Core
+nuget Microsoft.NET.Test.Sdk
+nuget NUnit
+nuget NUnit.Analyzers
+nuget NUnit3TestAdapter
