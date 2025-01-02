@@ -15,6 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode2024.Common\AdventOfCode2024.Common.fsproj" />
+    <ProjectReference Include="..\Pinicola.FSharp\Pinicola.FSharp\Pinicola.FSharp.fsproj" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
