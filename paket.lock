@@ -13,7 +13,7 @@ GROUP Tests
 STORAGE: NONE
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    coverlet.collector (6.0.2)
+    coverlet.collector (6.0.3)
     FluentAssertions (7.0)
       System.Configuration.ConfigurationManager (>= 6.0) - restriction: >= net6.0
       System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: || (>= net47) (&& (>= netstandard2.0) (< netstandard2.1))
@@ -28,11 +28,11 @@ NUGET
       Microsoft.TestPlatform.ObjectModel (>= 17.12) - restriction: >= netcoreapp3.1
       Newtonsoft.Json (>= 13.0.1) - restriction: >= netcoreapp3.1
     Newtonsoft.Json (13.0.3) - restriction: >= netcoreapp3.1
-    NUnit (4.2.2)
-      System.Memory (>= 4.5.5) - restriction: >= net462
+    NUnit (4.3.2)
+      System.Memory (>= 4.6) - restriction: >= net462
       System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: >= net462
       System.ValueTuple (>= 4.5) - restriction: >= net462
-    NUnit.Analyzers (4.4)
+    NUnit.Analyzers (4.5)
     NUnit3TestAdapter (4.6)
     System.Buffers (4.6) - restriction: >= net462
     System.Collections.Immutable (9.0) - restriction: || (&& (>= net462) (>= netcoreapp3.1)) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netcoreapp3.1))
