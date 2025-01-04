@@ -14,6 +14,9 @@
     <Compile Include="Day01\Solution.fs" />
     <Content Include="Day01\example" />
     <Content Include="Day01\input" />
+    <Compile Include="Day02/Solution.fs" />
+    <Content Include="Day02/example" />
+    <Content Include="Day02/input" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pinicola.FSharp\Pinicola.FSharp.SpectreConsole\Pinicola.FSharp.SpectreConsole.fsproj" />
