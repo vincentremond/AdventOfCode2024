@@ -21,6 +21,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Pinicola.FSharp", "Pinicola
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Pinicola.FSharp.SpectreConsole", "Pinicola.FSharp\Pinicola.FSharp.SpectreConsole\Pinicola.FSharp.SpectreConsole.fsproj", "{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NewDay", "NewDay\NewDay.fsproj", "{07190010-4D7F-406C-B543-D75458DA9999}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07190010-4D7F-406C-B543-D75458DA9999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07190010-4D7F-406C-B543-D75458DA9999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07190010-4D7F-406C-B543-D75458DA9999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07190010-4D7F-406C-B543-D75458DA9999}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79} = {EB72B8C7-0701-472E-8400-4F765AB807AF}

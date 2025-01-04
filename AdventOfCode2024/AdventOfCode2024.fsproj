@@ -10,10 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Runner.fs" />
-    <Compile Include="Day01\Tests.fs" />
+    <Compile Include="Day01\Solution.fs" />
+    <Content Include="Day01\example" />
+    <Content Include="Day01\input" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pinicola.FSharp\Pinicola.FSharp.SpectreConsole\Pinicola.FSharp.SpectreConsole.fsproj" />

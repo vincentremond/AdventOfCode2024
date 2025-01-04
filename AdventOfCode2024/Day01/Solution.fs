@@ -11,12 +11,12 @@ module Parser =
     let parse =
 
         let parseLine = (pint32 .>> spaces) .>>. pint32
-        parseOrFail (sepBy parseLine newline)
+        String.trim >> parseOrFail ((sepBy parseLine newline) .>> eof)
 
 [<RequireQualifiedAccess>]
 module Solution =
 
-    let solve1 (data: (int * int) list) =
+    let solve1 data =
         data
         |> List.map Tuple2.toList
         |> List.transpose
@@ -26,8 +26,8 @@ module Solution =
         |> List.sum
 
     let solve2 data =
-        let (first, second) = List.unzip data
-        let countPerValue = List.countBy id (second) |> Map.ofList
+        let first, second = List.unzip data
+        let countPerValue = List.countBy id second |> Map.ofList
 
         first
         |> List.map (fun v ->
@@ -38,13 +38,13 @@ module Solution =
         |> List.sum
 
 [<Test>]
-let Test1 () =
+let Test () =
 
     Runner.exec {
         Day = 1
         Parser = Parser.parse
-        Sample = TextFile.example.Text |> Some
-        UserData = TextFile.input.Text |> Some
+        Sample = TextFile.Day01.example.Text |> Some
+        UserData = TextFile.Day01.input.Text |> Some
         Part1 =
             Some {
                 Solver = Solution.solve1
