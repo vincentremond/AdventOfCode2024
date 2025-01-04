@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode2024.Common", "AdventOfCode2024.Common\AdventOfCode2024.Common.fsproj", "{0C77CCD7-7178-4A87-8C31-90A98A098480}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode2024.Day01", "AdventOfCode2024.Day01\AdventOfCode2024.Day01.fsproj", "{E01E8782-A350-4FD1-AA38-30AAC1B6FAC3}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode2024", "AdventOfCode2024\AdventOfCode2024.fsproj", "{E01E8782-A350-4FD1-AA38-30AAC1B6FAC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{F2B7C96F-A7C1-4E0A-8549-0807F1F37211}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,7 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{F2B7C9
 		LICENSE = LICENSE
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Pinicola.FSharp", "Pinicola.FSharp\Pinicola.FSharp\Pinicola.FSharp.fsproj", "{45B2F929-C748-4D77-9E1F-5925E1E09730}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pinicola.FSharp", "Pinicola.FSharp", "{EB72B8C7-0701-472E-8400-4F765AB807AF}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Pinicola.FSharp", "Pinicola.FSharp\Pinicola.FSharp\Pinicola.FSharp.fsproj", "{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Pinicola.FSharp.SpectreConsole", "Pinicola.FSharp\Pinicola.FSharp.SpectreConsole\Pinicola.FSharp.SpectreConsole.fsproj", "{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,17 +30,21 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C77CCD7-7178-4A87-8C31-90A98A098480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C77CCD7-7178-4A87-8C31-90A98A098480}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C77CCD7-7178-4A87-8C31-90A98A098480}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C77CCD7-7178-4A87-8C31-90A98A098480}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E01E8782-A350-4FD1-AA38-30AAC1B6FAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E01E8782-A350-4FD1-AA38-30AAC1B6FAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E01E8782-A350-4FD1-AA38-30AAC1B6FAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E01E8782-A350-4FD1-AA38-30AAC1B6FAC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45B2F929-C748-4D77-9E1F-5925E1E09730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45B2F929-C748-4D77-9E1F-5925E1E09730}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45B2F929-C748-4D77-9E1F-5925E1E09730}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45B2F929-C748-4D77-9E1F-5925E1E09730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31F6FA5E-4EA2-4FCB-9065-163C0DFD8D79} = {EB72B8C7-0701-472E-8400-4F765AB807AF}
+		{62E86F6B-58F2-46D8-AB2D-8BAFC9AAD5BB} = {EB72B8C7-0701-472E-8400-4F765AB807AF}
 	EndGlobalSection
 EndGlobal

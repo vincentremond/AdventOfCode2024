@@ -1,8 +1,8 @@
-group Tests
 FSharp.Core
+FSharp.Data.LiteralProviders
+FsToolkit.ErrorHandling
 coverlet.collector
 Microsoft.NET.Test.Sdk
-NUnit
 NUnit.Analyzers
 NUnit3TestAdapter
-FluentAssertions
+FsUnit

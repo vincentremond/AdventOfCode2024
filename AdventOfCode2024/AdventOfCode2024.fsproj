@@ -7,14 +7,16 @@
     <GenerateProgramFile>true</GenerateProgramFile>
     <WarningsAsErrors>FS0025</WarningsAsErrors>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <RootNamespace>AdventOfCode2024.Tests</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
-    <Compile Include="UnitTest1.fs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AdventOfCode2024.Common\AdventOfCode2024.Common.fsproj" />
+    <Compile Include="Runner.fs" />
+    <Compile Include="Day01\Tests.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pinicola.FSharp\Pinicola.FSharp.SpectreConsole\Pinicola.FSharp.SpectreConsole.fsproj" />
     <ProjectReference Include="..\Pinicola.FSharp\Pinicola.FSharp\Pinicola.FSharp.fsproj" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
