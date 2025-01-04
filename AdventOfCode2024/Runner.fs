@@ -30,7 +30,7 @@ type Runner<'parsedData, 'result when 'result: equality> = {
             AnsiConsole.markupLineInterpolated $"[green]{name} passed[/]"
         | None -> AnsiConsole.markupLineInterpolated $"[red]{name} not run[/]"
 
-    static member exec runner =
+    static member exec (runner: Runner<'parsedData, 'result>) =
         let getSampleSolution = _.ForSample
         let getUserDataSolution = _.ForUserData
 
