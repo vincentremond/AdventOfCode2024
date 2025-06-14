@@ -46,22 +46,20 @@ module Solution =
 
     let solve2 data =
 
-        let checkLine (line: int list) =
-            let rec checkLine' line dampened state prev =
-                match line with
-                | [] -> Option.get state
-                | x::xs ->
-                    let diff = x - prev
-
-                    
-
-                    if 1 <= diff && diff <= 3 then
-                        checkLine' xs x (Option.map ((+) 1) state)
-                    else
-                        checkLine' xs x state
-
-            let head, tail = List.head line, List.tail line
-            checkLine' line false None head
+        let checkLine (line: int list) = failwith "Not implemented"
+        // let rec checkLine' line dampened state prev =
+        //     match line with
+        //     | [] -> Option.get state
+        //     | x :: xs ->
+        //         let diff = x - prev
+        //
+        //         if 1 <= diff && diff <= 3 then
+        //             checkLine' xs x (Option.map ((+) 1) state)
+        //         else
+        //             checkLine' xs x state
+        //
+        // let head, tail = List.head line, List.tail line
+        // checkLine' line false None head
 
         data
         |> List.map checkLine
