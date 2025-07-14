@@ -13,7 +13,13 @@ type Runner<'parsedData, 'result when 'result: equality> = {
     Part2: Part<'parsedData, 'result> option
 } with
 
-    static member run name parser (part: Part<'parsedData, 'result> option) (stringData: string option) (getResult: Solutions<'result> -> 'result option) =
+    static member run
+        name
+        parser
+        (part: Part<'parsedData, 'result> option)
+        (stringData: string option)
+        (getResult: Solutions<'result> -> 'result option)
+        =
         let x =
             option {
                 let! part = part
@@ -30,7 +36,7 @@ type Runner<'parsedData, 'result when 'result: equality> = {
             AnsiConsole.markupLineInterpolated $"[green]{name} passed[/]"
         | None -> AnsiConsole.markupLineInterpolated $"[red]{name} not run[/]"
 
-    static member exec (runner: Runner<'parsedData, 'result>) =
+    static member exec(runner: Runner<'parsedData, 'result>) =
         let getSampleSolution = _.ForSample
         let getUserDataSolution = _.ForUserData
 
